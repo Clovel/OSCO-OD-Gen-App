@@ -35,7 +35,7 @@ const useStyles = makeStyles(
         overflow: 'auto',
       },
       container: {
-        padding: pTheme.spacing(6),
+        padding: pTheme.spacing(4),
       },
     }
   )
