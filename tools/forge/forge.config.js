@@ -15,7 +15,7 @@ module.exports = {
       // Windows applications and is therefore the most user friendly you can get.
       name: '@electron-forge/maker-squirrel',
       config: {
-        name: 'electron-react-typescript-webpack-2021',
+        name: 'OSCO-OD-Gen-App',
       },
     },
     {
@@ -54,18 +54,16 @@ module.exports = {
           // Entrypoints of the application
           entryPoints: [
             {
-              // React Hot Module Replacement (HMR)
-              rhmr: 'react-hot-loader/patch',
               // HTML index file template
               html: path.join(rootDir, 'src/client/index.html'),
               // Renderer
               js: path.join(rootDir, 'src/client/renderer.tsx'),
-              // Main Window
-              name: 'main_window',
               // Preload
               preload: {
                 js: path.join(rootDir, 'src/client/preload.tsx'),
               },
+              // Main Window
+              name: 'main_window',
             },
           ],
         },

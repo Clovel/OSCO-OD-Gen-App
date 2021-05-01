@@ -1,6 +1,6 @@
 /* Framework imports ----------------------------------- */
 import React from 'react';
-import ReactDOM, { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 
 /* Module imports -------------------------------------- */
 import { ThemeProvider } from '@material-ui/core/styles';

@@ -1,11 +1,28 @@
+/* Imports --------------------------------------------- */
 const rules = require('./webpack.rules');
 const plugins = require('./webpack.plugins');
 
+/* Renderer exclusive rules ---------------------------- */
+rules.push(
+  {
+    test: /\.css$/,
+    use: [
+      {
+        loader: 'style-loader'
+      },
+      {
+        loader: 'css-loader'
+      }
+    ],
+  }
+);
+
+/* Renderer webpack configuration ---------------------- */
 module.exports = {
   module: {
     rules,
   },
-  plugins: plugins.filter(Boolean),
+  plugins: plugins,
   resolve: {
     extensions: [
       '.js',
@@ -15,11 +32,6 @@ module.exports = {
       '.css',
       '.json',
     ],
-    alias: {
-      // React Hot Loader Patch
-      'react-dom': '@hot-loader/react-dom',
-      // Custom Aliases
-      ...require('./webpack.aliases'),
-    },
+    alias: require('./webpack.aliases'),
   },
 };

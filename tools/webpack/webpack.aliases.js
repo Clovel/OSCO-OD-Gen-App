@@ -3,8 +3,8 @@ const { createWebpackAliases } = require('./webpack.helpers');
 // Export aliases
 module.exports = createWebpackAliases(
   {
-    assets: 'assets',
     src: 'src',
+    assets: 'src/client/assets',
     client: 'src/client',
     layouts: 'src/client/layouts',
     pages: 'src/client/pages',
