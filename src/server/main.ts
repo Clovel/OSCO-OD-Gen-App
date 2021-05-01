@@ -27,14 +27,12 @@ if(require('electron-squirrel-startup')) {
 const createWindow = () => {
   sMainWindow = new Electron.BrowserWindow(
     {
+      title: 'OSCO OG Generator',
       width: 1200,
       height: 900,
       webPreferences: {
         nodeIntegration: true,
         enableRemoteModule: true,
-        contextIsolation: true,
-        nodeIntegrationInWorker: true,
-        nodeIntegrationInSubFrames: true,
         preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       },
     },
