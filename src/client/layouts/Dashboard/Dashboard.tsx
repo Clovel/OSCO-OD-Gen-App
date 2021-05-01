@@ -1,6 +1,7 @@
 /* Framework imports ----------------------------------- */
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { hot } from 'react-hot-loader';
 
 /* Component imports ----------------------------------- */
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -93,4 +94,4 @@ const Dashboard: React.FC<DashboardProps> = ({ addToScrollToTop }) => {
 };
 
 /* Export Dashboard layout component ------------------- */
-export default withScrollToTopDeclaration(Dashboard) as React.FC;
+export default hot(module)(withScrollToTopDeclaration(Dashboard) as React.FC);

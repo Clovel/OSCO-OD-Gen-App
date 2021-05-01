@@ -1,5 +1,6 @@
 /* Framework imports ----------------------------------- */
 import React from 'react';
+import { hot } from 'react-hot-loader';
 
 /* Component imports ----------------------------------- */
 import CopyrightFooter from './CopyrightFooter/CopyrightFooter';
@@ -16,4 +17,4 @@ const Footer: React.FC = () => {
 };
 
 /* Export Footer component ----------------------------- */
-export default Footer;
+export default hot(module)(Footer);

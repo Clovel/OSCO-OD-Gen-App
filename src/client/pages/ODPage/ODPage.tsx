@@ -1,5 +1,6 @@
 /* Framework imports ----------------------------------- */
 import React, { useState } from 'react';
+import { hot } from 'react-hot-loader';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
 /* Component imports ----------------------------------- */
@@ -172,4 +173,4 @@ const ODPage: React.FC<ODPageProps> = () => {
 };
 
 /* Export ODPage component ----------------------------- */
-export default ODPage;
+export default hot(module)(ODPage);

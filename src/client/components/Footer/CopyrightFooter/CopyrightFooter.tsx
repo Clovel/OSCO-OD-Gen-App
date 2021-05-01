@@ -1,5 +1,6 @@
 /* Framework imports ----------------------------------- */
 import React from 'react';
+import { hot } from 'react-hot-loader';
 
 /* Component imports ----------------------------------- */
 import Typography from '@material-ui/core/Typography';
@@ -28,4 +29,4 @@ const CopyrightFooter: React.FC = () => {
 };
 
 /* Export CopyrightFooter component -------------------- */
-export default CopyrightFooter;
+export default hot(module)(CopyrightFooter);

@@ -3,6 +3,7 @@ import React, { useMemo, forwardRef } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
+import { hot } from 'react-hot-loader';
 
 /* Component imports ----------------------------------- */
 import Drawer from '@material-ui/core/Drawer';
@@ -244,4 +245,4 @@ const SideBar: React.FC<SideBarProps> = ({ open, handleDrawerOpen, handleDrawerC
 };
 
 /* Export SideBar component ---------------------------- */
-export default SideBar;
+export default hot(module)(SideBar);

@@ -1,5 +1,6 @@
 /* Framework imports ----------------------------------- */
 import React from 'react';
+import { hot } from 'react-hot-loader';
 import { makeStyles } from '@material-ui/core';
 
 /* Component imports ----------------------------------- */
@@ -38,4 +39,4 @@ const Loading: React.FC<LoadingProps> = ({ isLoading }) => {
 };
 
 /* Export Loading component ----------------------------- */
-export default Loading;
+export default hot(module)(Loading);

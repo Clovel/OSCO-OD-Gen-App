@@ -3,6 +3,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import { hot } from 'react-hot-loader';
 
 /* Helpers imports ------------------------------------- */
 
@@ -170,4 +171,4 @@ const AppBar: React.FC<AppBarProps> = ({ open }) => {
 };
 
 /* Export AppBar component ----------------------------- */
-export default AppBar;
+export default hot(module)(AppBar);

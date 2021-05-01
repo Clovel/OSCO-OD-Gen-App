@@ -1,5 +1,6 @@
 /* Framework imports ----------------------------------- */
 import React from 'react';
+import { hot } from 'react-hot-loader';
 
 /* Module imports -------------------------------------- */
 import { isDev } from 'helpers/isDev';
@@ -23,4 +24,4 @@ const VersionFooter: React.FC = () => {
 };
 
 /* Export VersionFooter component ---------------------- */
-export default VersionFooter;
+export default hot(module)(VersionFooter);

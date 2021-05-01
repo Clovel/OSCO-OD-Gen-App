@@ -5,6 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
+import { hot } from 'react-hot-loader';
 
 /* Component imports ----------------------------------- */
 import ODPage from 'pages/ODPage/ODPage';
@@ -27,4 +28,4 @@ const MainRouter: React.FC = () => {
 };
 
 /* Export MainRouter component ------------------------- */
-export default MainRouter;
+export default hot(module)(MainRouter);
