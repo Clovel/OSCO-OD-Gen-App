@@ -31,10 +31,10 @@ const createWindow = () => {
       height: 900,
       webPreferences: {
         nodeIntegration: true,
-        enableRemoteModule: false,
+        enableRemoteModule: true,
         contextIsolation: true,
-        nodeIntegrationInWorker: false,
-        nodeIntegrationInSubFrames: false,
+        nodeIntegrationInWorker: true,
+        nodeIntegrationInSubFrames: true,
         preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       },
     },
