@@ -218,22 +218,22 @@ const SideBar: React.FC<SideBarProps> = ({ open, handleDrawerOpen, handleDrawerC
       <List>
         <SideBarNavItem
           mustBeExact
-          path="/app"
+          path="/"
           text="Général"
           IconComponent={DashboardIcon}
         />
         <SideBarNavItem
-          path="/app/projects"
+          path="/"
           text="Projets"
           IconComponent={LayersIcon}
         />
         <SideBarNavItem
-          path="/app/slaves"
+          path="/"
           text="Nodes"
           IconComponent={AccountTreeIcon}
         />
         <SideBarNavItem
-          path="/app/configuration"
+          path="/"
           text="Configuration"
           IconComponent={SettingsIcon}
         />
