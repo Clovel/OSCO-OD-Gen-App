@@ -11,7 +11,7 @@ import AppBar from './AppBar/AppBar';
 import { withScrollToTopDeclaration } from './ScrollToTop/ScrollToTop';
 import ErrorBoundary from 'pages/ErrorBoundary/ErrorBoundary';
 import Footer from 'components/Footer/Footer';
-import MainRouter from 'components/MainRouter/MainRouter';
+import MainRouter from 'layouts/Dashboard/MainRouter/MainRouter';
 
 /*
  * Cloned from https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/templates/dashboard

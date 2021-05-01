@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 /* Component imports ----------------------------------- */
+import ODPage from 'pages/ODPage/ODPage';
 
 /* Helpers imports ------------------------------------- */
 
@@ -16,11 +17,11 @@ import {
 const MainRouter: React.FC = () => {
   return (
     <Switch>
-      {/* <ConfigDependentRoute
-        path="/app/projects/new"
+      <Route
+        path="/"
         exact
-        component={NewProjectDashboard}
-      /> */}
+        component={ODPage}
+      />
     </Switch>
   );
 };
