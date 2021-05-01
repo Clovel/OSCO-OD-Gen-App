@@ -14,6 +14,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import SettingsIcon from '@material-ui/icons/SettingsOutlined';
+import FolderOpenOutlinedIcon from '@material-ui/icons/FolderOpenOutlined';
+import CreateNewFolderOutlinedIcon from '@material-ui/icons/CreateNewFolderOutlined';
 
 /* CSS styling for the layout -------------------------- */
 const drawerWidth = 240;
@@ -153,7 +155,18 @@ const AppBar: React.FC<AppBarProps> = ({ open }) => {
             classes={{ text: isPathActive('/app/projects/new') ? classes.buttonActive : classes.buttonShadow }}
             style={{ marginRight: 50, paddingRight: 35, paddingLeft: 35 }}
           >
-            New Project +
+            <FolderOpenOutlinedIcon />
+            &nbsp;
+            Open OD
+          </Button>
+          <Button
+            onClick={handleNewProjectClick}
+            classes={{ text: isPathActive('/app/projects/new') ? classes.buttonActive : classes.buttonShadow }}
+            style={{ marginRight: 50, paddingRight: 35, paddingLeft: 35 }}
+          >
+            <CreateNewFolderOutlinedIcon />
+            &nbsp;
+            New Project
           </Button>
           <IconButton
             color="primary"
