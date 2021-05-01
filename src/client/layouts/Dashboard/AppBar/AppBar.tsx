@@ -131,6 +131,15 @@ const AppBar: React.FC<AppBarProps> = ({ open }) => {
         <Typography
           component="h1"
           variant="h6"
+          color="primary"
+          noWrap
+          className={classes.title}
+        >
+          {history.location.pathname}
+        </Typography>
+        <Typography
+          component="h1"
+          variant="h6"
           color="inherit"
           noWrap
           className={classes.title}
