@@ -314,7 +314,7 @@
       "off" /* TypeScript will manage props */
     ],
     "@typescript-eslint/strict-boolean-expressions" : [
-      "error"
+      "off"
       // {
       //   "allow-null-union": true,
       //   "allow-undefined-union": true,
