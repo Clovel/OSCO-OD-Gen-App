@@ -172,5 +172,3 @@ main();
  * your app's specific code to the main process.
  * You can also put it in other files
  * and just include it here */
-// eslint-disable-next-line import/first
-import './ipc/IPCMain';

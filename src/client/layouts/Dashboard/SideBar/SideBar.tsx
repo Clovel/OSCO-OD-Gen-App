@@ -25,7 +25,6 @@ import type { OverridableComponent } from '@material-ui/core/OverridableComponen
 import type { SvgIconTypeMap } from '@material-ui/core/SvgIcon';
 
 /* Helpers imports ------------------------------------- */
-import { getElectonPath } from 'client/ipc/IPCRenderer';
 
 /* CSS styling for the layout -------------------------- */
 import { colorMajor, colorMinor } from 'client/muiTheme';
@@ -171,18 +170,6 @@ interface SideBarProps {
 /* SideBar page component ------------------------------ */
 const SideBar: React.FC<SideBarProps> = ({ open, handleDrawerOpen, handleDrawerClose }) => {
   const classes = useStyles();
-
-  getElectonPath()
-    .then(
-      () => {
-        console.log(`[DEBUG] <SideBar> __dirname :`, __dirname);
-      },
-    )
-    .catch(
-      (pError) => {
-        console.log(`[ERROR] <SideBar> getElectonPath failed :`, pError);
-      },
-    );
 
   return (
     <Drawer
