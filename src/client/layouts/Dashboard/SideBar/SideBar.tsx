@@ -199,7 +199,7 @@ const SideBar: React.FC<SideBarProps> = ({ open, handleDrawerOpen, handleDrawerC
         }
       >
         <img
-          src="/src/client/assets/reactIcons/logo512.png"
+          src="assets/reactIcons/logo512.png"
           style={
             {
               marginTop: 5,
