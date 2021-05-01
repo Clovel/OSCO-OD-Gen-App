@@ -62,7 +62,7 @@ module.exports = {
               preload: {
                 js: path.join(rootDir, 'src/client/preload.tsx'),
               },
-              // Main Window
+              /* Window name */
               name: 'main_window',
             },
           ],

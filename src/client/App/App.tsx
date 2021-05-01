@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <Router>
           <Switch>
             <Route
-              path="/"
+              path="/main_window"
               component={Dashboard}
             />
           </Switch>
