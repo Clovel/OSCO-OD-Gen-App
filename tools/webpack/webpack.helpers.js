@@ -1,10 +1,8 @@
+/* Imports --------------------------------------------- */
 const path = require('path');
 const cwd = process.cwd();
 
-const inDev = () => {
-  return process.env.NODE_ENV === 'development';
-};
-
+/* Webpack helper functions ---------------------------- */
 const createWebpackAliases = (pAliases) => {
   const lResult = {};
   for(const lAliasName in pAliases) {
@@ -16,7 +14,7 @@ const createWebpackAliases = (pAliases) => {
   return lResult;
 };
 
+/* Export Webpack helper functions --------------------- */
 module.exports = {
-  inDev,
   createWebpackAliases,
 };

@@ -1,7 +1,7 @@
+/* Imports --------------------------------------------- */
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
-const { inDev } = require('./webpack.helpers');
-
+/* Export the used Webpack plugins --------------------- */
 module.exports = [
-  inDev && new ForkTsCheckerWebpackPlugin(),
+  new ForkTsCheckerWebpackPlugin(),
 ];

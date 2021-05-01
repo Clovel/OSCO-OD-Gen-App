@@ -27,14 +27,12 @@ if(require('electron-squirrel-startup')) {
 const createWindow = () => {
   sMainWindow = new Electron.BrowserWindow(
     {
+      title: 'OSCO OG Generator',
       width: 1200,
       height: 900,
       webPreferences: {
         nodeIntegration: true,
-        enableRemoteModule: false,
-        contextIsolation: true,
-        nodeIntegrationInWorker: false,
-        nodeIntegrationInSubFrames: false,
+        enableRemoteModule: true,
         preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       },
     },
@@ -172,5 +170,3 @@ main();
  * your app's specific code to the main process.
  * You can also put it in other files
  * and just include it here */
-// eslint-disable-next-line import/first
-import './ipc/IPCMain';

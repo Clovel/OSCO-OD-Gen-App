@@ -29,5 +29,11 @@ interface IPCMethodCallArgs {
 /* Internal variables ---------------------------------- */
 
 /* IPCMain functions ----------------------------------- */
+IPCMain.handle(
+  'getElectonPath',
+  () => {
+    return __dirname;
+  },
+);
 
 /* IPCMain events -------------------------------------- */

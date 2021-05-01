@@ -153,7 +153,7 @@ const AppBar: React.FC<AppBarProps> = ({ open }) => {
             classes={{ text: isPathActive('/app/projects/new') ? classes.buttonActive : classes.buttonShadow }}
             style={{ marginRight: 50, paddingRight: 35, paddingLeft: 35 }}
           >
-            Nouveau Projet +
+            New Project +
           </Button>
           <IconButton
             color="primary"
