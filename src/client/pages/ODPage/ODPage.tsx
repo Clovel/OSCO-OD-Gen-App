@@ -8,6 +8,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
+import EDSOverview from './EDSOverview/EDSOverview';
 
 /* CSS styling ----------------------------------------- */
 const useStyles = makeStyles(
@@ -31,7 +32,7 @@ interface TabInfo {
 const sTabs: TabInfo[] = [
   {
     label: 'EDS file',
-    component: 'EDS file',
+    component: <EDSOverview />,
   },
   {
     label: 'Item Two',
