@@ -35,28 +35,20 @@ const sTabs: TabInfo[] = [
     component: <EDSOverview />,
   },
   {
-    label: 'Item Two',
+    label: 'OD Overview',
     component: 'Item Two',
   },
   {
-    label: 'Item Three',
+    label: 'General settings',
     component: 'Item Three',
   },
   {
-    label: 'Item Four',
+    label: 'Dictionary',
     component: 'Item Four',
   },
   {
-    label: 'Item Five',
+    label: 'Comments',
     component: 'Item Five',
-  },
-  {
-    label: 'Item Six',
-    component: 'Item Six',
-  },
-  {
-    label: 'Item Seven',
-    component: 'Item Seven',
   },
 ];
 
