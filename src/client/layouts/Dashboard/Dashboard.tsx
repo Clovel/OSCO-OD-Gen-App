@@ -39,11 +39,11 @@ const useStyles = makeStyles(
         padding: pTheme.spacing(4),
       },
     }
-  )
+  ),
 );
 
 interface DashboardProps {
-  addToScrollToTop?: React.LegacyRef<HTMLElement>;
+  addToScrollToTop?: React.Ref<HTMLElement>;
 }
 
 /* Dashboard layout component -------------------------- */
@@ -94,4 +94,4 @@ const Dashboard: React.FC<DashboardProps> = ({ addToScrollToTop }) => {
 };
 
 /* Export Dashboard layout component ------------------- */
-export default hot(module)(withScrollToTopDeclaration(Dashboard) as React.FC);
+export default hot(module)(withScrollToTopDeclaration<DashboardProps, HTMLElement>(Dashboard));
